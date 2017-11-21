@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<div class="w3-container"><h2>Quote</h2></div><hr>
+
+<div class="w3-container">
+
+
+<p>
+  <strong>Name:</strong>
+  <%= @quote.name %>
+</p>
+
+
+<p>
+  <strong>Content:</strong>
+  <%= @quote.content %>
+</p>
+
+
+</div>
+
+<div class="w3-container">
+
+<%= link_to 'Edit', edit_quote_path(@quote) ,class:"w3-btn w3-purple w3-hover-deep-purple" %> |
+<%= link_to 'Back', quotes_path , class:"w3-btn w3-purple w3-hover-deep-purple" %>
+
+</div></div>

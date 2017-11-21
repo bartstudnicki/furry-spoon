@@ -1,0 +1,28 @@
+<%= form_for(quote) do |f| %>
+  <% if quote.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(quote.errors.count, "error") %> prohibited this quote from being saved:</h2>
+
+      <ul>
+      <% quote.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <form class="w3-container">
+    <%= f.label :name %>
+    <%= f.text_field :name , class:"w3-input" %>
+    <br>
+
+  
+    <%= f.label :content %>
+    <%= f.text_field :content , class:"w3-input" %>
+    <br>
+
+  
+    <%= f.submit :Create, class:"w3-btn w3-purple w3-hover-deep-purple"%>
+    
+  </form><br>
+<% end %>

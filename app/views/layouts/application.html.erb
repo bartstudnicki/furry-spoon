@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bootcont</title>
+    <title>Bart Studnicki Lab 5</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class="container">
-    <nav class="navbar navbar-success">
-  
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">WebSiteName</a>
+  <body class="w3-container w3-light-grey">
+    <div class="w3-bar">
+      <a class="w3-bar-item w3-hover-purple" href="#">Bart Studnicki Lab 5</a>
+      <a class="w3-bar-item w3-hover-purple" href="/">Quotes</a>
+      <a class="w3-bar-item w3-hover-purple" href="/static_pages/home">Home</a>
+      <a class="w3-bar-item w3-hover-purple" href="/static_pages/help">Help</a>
+      <a class="w3-bar-item w3-hover-purple" href="/static_pages/about">About</a>
     </div>
-    <ul class="nav navbar-nav">
-      <li><a href="/">Typos</a></li>
-      <li><a href="/static_pages/home">home</a></li>
-      <li><a href="/static_pages/help">help</a></li>
-      <li><a href="/static_pages/about">about</a></li>
-    </ul>
-  
-    </nav>
+    
     <div>
     <%= yield %>
     
